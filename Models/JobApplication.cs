@@ -15,43 +15,44 @@ public enum ApplicationStatus
 public class JobApplication
 {
 
-    int id;
-    public String enterpriseName;
+    public int Id {get; set;}
+    public string EnterpriseName {get; set;}
 
-    string jobPosition;
+    public string JobPosition {get; set;}
 
-    ApplicationStatus status;
+    public ApplicationStatus Status {get; set;}
 
-    DateTime applicationDate;
-
-    string? offerURL;
+    public DateTime ApplicationDate {get; set;}
+    public string? OfferURL {get; set;}
 
 
     public JobApplication(string enterpriseName, string jobPosition, ApplicationStatus status, DateTime applicationDate, string? offerURL = null)
     {
 
 
-        
-        this.enterpriseName = enterpriseName;
-        this.jobPosition = jobPosition;
-        this.status = status;
-        this.applicationDate = applicationDate;
-        this.offerURL = offerURL;
-
+        this.EnterpriseName = enterpriseName;
+        this.JobPosition = jobPosition;
+        this.Status = status;
+        this.ApplicationDate = applicationDate;
+        this.OfferURL = offerURL;
 
     }
 
 
-    
-
-
-    
-
-
-
-
-
-
-
-
 }
+
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
