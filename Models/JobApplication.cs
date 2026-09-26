@@ -25,6 +25,10 @@ public class JobApplication
     public DateTime ApplicationDate {get; set;}
     public string? OfferURL {get; set;}
 
+    public JobApplication()
+{
+}
+
 
     public JobApplication(string enterpriseName, string jobPosition, ApplicationStatus status, DateTime applicationDate, string? offerURL = null)
     {

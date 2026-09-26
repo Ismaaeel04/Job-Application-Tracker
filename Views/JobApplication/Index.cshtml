@@ -1,0 +1,25 @@
+@model List<JobApplication>
+
+<h1>Job Applications</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Enterprise</th>
+            <th>Position</th>
+            <th>Status</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var app in Model)
+        {
+            <tr>
+                <td>@app.EnterpriseName</td>
+                <td>@app.JobPosition</td>
+                <td>@app.Status</td>
+                <td>@app.ApplicationDate.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>

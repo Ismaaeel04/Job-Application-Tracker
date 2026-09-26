@@ -1,0 +1,36 @@
+@model JobApplication
+
+<h1>Edit Job Application</h1>
+
+<form asp-action="Edit" method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label>Enterprise Name</label>
+        <input asp-for="EnterpriseName" />
+    </div>
+
+    <div>
+        <label>Job Position</label>
+        <input asp-for="JobPosition" />
+    </div>
+
+    <div>
+        <label>Status</label>
+        <select asp-for="Status" asp-items="Html.GetEnumSelectList<ApplicationStatus>()"></select>
+    </div>
+
+    <div>
+        <label>Application Date</label>
+        <input asp-for="ApplicationDate" />
+    </div>
+
+    <div>
+        <label>Offer URL</label>
+        <input asp-for="OfferURL" />
+    </div>
+
+    <button type="submit">Save</button>
+
+</form>
